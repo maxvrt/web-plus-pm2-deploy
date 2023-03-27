@@ -18,7 +18,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
-      'post-deploy': 'cd ~/mesto/source/frontend/ && sudo npm i && npm run build',
+      'post-deploy': 'cd ~/mesto/source/frontend/ && sudo npm i && sudo npm run build',
     },
   },
 }
