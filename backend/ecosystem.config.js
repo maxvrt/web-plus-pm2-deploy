@@ -22,7 +22,7 @@ module.exports = {
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
       'pre-deploy': 'scp -Cr ./.env vortm1@158.160.24.251:/home/vortm1/mesto/backend',
-      'post-deploy': 'cd ~/mesto/source/backend/ && npm i && npm run build && pm2 startOrRestart ecosystem.config.js --env production',
+      'post-deploy': 'cd ~/m-backend/source/backend/ && npm i && npm run build && pm2 startOrRestart ecosystem.config.js --env production',
     },
   },
 };
