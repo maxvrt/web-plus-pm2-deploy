@@ -22,7 +22,7 @@ module.exports = {
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
       // 'pre-deploy': 'cd ~/m-backend/source/backend',
-      'post-deploy': 'cd ~/m-backend/source/backend/ && npm i && npm run build && cd ~/m-backend/source/backend/dist/ && pm2 start app.ts',
+      'post-deploy': 'cd ~/m-backend/source/backend/ && npm i && npm run build && cd ~/m-backend/source/backend/dist && pm2 start app.js',
     },
   },
 };
