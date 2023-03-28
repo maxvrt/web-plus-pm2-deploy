@@ -7,9 +7,23 @@ const {
 } = process.env;
 
 module.exports = {
-  apps: [{
-    name: "frontend",
-  }],
+  apps: [
+    {
+      name: "frontend",
+      env: {
+        NODE_ENV: "production",
+      },
+      cwd: "./frontend",
+    },
+    {
+      name: "backend",
+      script: "./backend/dist/app.ts",
+      env: {
+        NODE_ENV: "production",
+      },
+      cwd: "./backend",
+    },
+  ],
 
   deploy: {
     production: {
