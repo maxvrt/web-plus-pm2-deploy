@@ -27,6 +27,7 @@ module.exports = {
 server {
       listen 80; # принимаем запросы с 80 порта
       server_name smaksim.nomoredomains.work;
+      # настроили папку
       root /home/vortm1/m-frontend/source/frontend/build;
       location / {
         try_files   $uri   $uri/   /index.html;
